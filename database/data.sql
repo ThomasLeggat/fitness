@@ -37,6 +37,6 @@ CREATE TABLE workoutTB (
   workoutID int(10) AUTO_INCREMENT NOT NULL,
   workoutName varchar(30) NOT NULL,
   userID int(10) NOT NULL,
-  CONSTRAINT userIDPK PRIMARY KEY (workoutID)
+  CONSTRAINT userIDPK PRIMARY KEY (workoutID),
   CONSTRAINT workoutIDFK FOREIGN KEY (userID) REFERENCES userTB(userID)
   );
