@@ -40,3 +40,4 @@ CREATE TABLE workoutTB (
   CONSTRAINT userIDPK PRIMARY KEY (workoutID),
   CONSTRAINT workoutIDFK FOREIGN KEY (userID) REFERENCES userTB(userID)
   );
+ 
